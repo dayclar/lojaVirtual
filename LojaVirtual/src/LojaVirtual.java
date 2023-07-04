@@ -12,14 +12,11 @@ public class LojaVirtual {
 		this.qtdProdutos = qtdProdutos;
 		this.precoUnit = precoUnit;
 	}
-	public void Menu() {
-		System.out.print("====================================================================================================\n");
-		System.out.print("                                             Produtos\n");
-		System.out.print("====================================================================================================\n");
-		System.out.print("CÓDIGO        PRODUTO        QTD. PRODUTO               PREÇO UNIT");
-		System.out.println(getCodigo());
+    
+	@Override
+	public String toString() {
+		return codigo+"                "+produto+"                 "+qtdProdutos+"                 "+precoUnit+"\n";
 	}
-
 	public String getCodigo() {
 		return codigo;
 	}
