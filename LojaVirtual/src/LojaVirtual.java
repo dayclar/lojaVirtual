@@ -17,6 +17,7 @@ public class LojaVirtual {
 	public String toString() {
 		return codigo+"                "+produto+"                 "+qtdProdutos+"                 "+precoUnit+"\n";
 	}
+	
 	public String getCodigo() {
 		return codigo;
 	}
